@@ -1,22 +1,29 @@
 body {
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
-    height:100vh;
-    overflow:hidden;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
 }
 
 .container {
-    display:grid;
+    display: grid;
     width: 800px;
     height: 800px;
-    background-color:azure;
+    background-color: azure;
     border: 2px solid black;
-    top: 50%;
-    left: 50%;
-    
 }
 
-.grid-item:hover {
+.grid-item {
+    box-shadow: 0 0 0 0.1px black;
+}
 
+button {
+    background-color: azure;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 5px;
 }
