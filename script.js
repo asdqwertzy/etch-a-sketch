@@ -9,10 +9,19 @@ for (let i = 1; i <= 256; i++) {
     container.appendChild(x)
 }
 
+function randomColor() {
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
 function addListeners() {
     divs.forEach(function (x) {
         x.addEventListener('mouseover', function (e) {
-            x.style.backgroundColor = "black";
+            var randomRGB = randomColor();
+            x.style.backgroundColor = randomRGB; // RGB challenge, uncomment for basic function
+            // x.style.backgroundColor = "black";
         })
     })
 }
