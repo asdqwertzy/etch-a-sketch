@@ -20,8 +20,8 @@ function addListeners() {
     divs.forEach(function (x) {
         x.addEventListener('mouseover', function (e) {
             var randomRGB = randomColor();
-            x.style.backgroundColor = randomRGB; // RGB challenge, uncomment for basic function
-            // x.style.backgroundColor = "black";
+            // x.style.backgroundColor = randomRGB; // RGB challenge, uncomment for basic function
+             x.style.backgroundColor = "black";
         })
     })
 }
